@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Next Only</title>
+</head>
+<body>
+    <style>
+        /* chọn ra phần tử nằm liền kề sau phần tử p để style */
+        article p+a{
+            font-style: italic;
+            font-size: 20px;
+        }
+    
+    </style>
+    
+    <article>
+        <h1>Selector Next Only</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, accusamus?</p> 
+        <a href="http://google.com">chỉ trang tới google</a><br>
+        <h3>đây là thẻ tiêu đề</h3>
+    </article>
+</body>
+</html>

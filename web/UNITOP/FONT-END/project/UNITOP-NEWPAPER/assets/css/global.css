@@ -1,0 +1,15 @@
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-color {
+    color: #111111;
+}
+
+.box-margin-bottom {
+    margin-bottom: 30px;
+}

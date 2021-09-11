@@ -1,0 +1,28 @@
+body{
+    background: cornflowerblue;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: crimson;
+    text-align: center;
+    display: none;
+}
+/* hiển thị trên mobile */
+@media only screen and (max-width:46.1875em){
+    .em{
+        display: block;
+    }
+}
+/* hiển thị trên tablet */
+@media only screen and (min-width:46.25em) and (max-width:63.9375em){
+    .rem{
+        display: block;
+    }
+}
+/* hiển thị trên pc */
+@media only screen and (min-width:64em){
+    .px{
+        display: block;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css ex6</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        #header {
+            flex-basis: 960px;
+            padding: 15px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        /* .box-padding {
+            padding: 15px;
+        } */
+        
+        .box-background-color {
+            background: rgb(11, 162, 189);
+        }
+        
+        .text-center-white {
+            color: white;
+            text-align: center;
+        }
+        
+        #wp-content {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #content {
+            box-sizing: border-box;
+            flex-basis: 600px;
+            background: #f3f3f3f3;
+            padding: 15px;
+            min-height: 400px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        
+        #sidebar {
+            box-sizing: border-box;
+            flex-basis: 360px;
+            background: #e1e1e1e1;
+            padding: 15px;
+            min-height: 400px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        /* .box-height {
+            min-height: 400px;
+        } */
+        
+        #footer {
+            flex-basis: 960px;
+            padding: 10px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        /* .text-size-transform {
+            font-size: 20px;
+            text-transform: 20px;
+        } */
+    </style>
+    <div id="wrapper">
+        <div id="header" class="box-padding box-background-color text-center-white ">
+            layout web 2 cột - flex css
+        </div>
+        <div id="wp-content">
+            <div id="content">
+                content
+            </div>
+            <div id="sidebar">
+                sidebar
+            </div>
+        </div>
+        <div id="footer" class="text-center-white box-background-color  ">
+            unitop.vn
+        </div>
+    </div>
+</body>
+
+</html>

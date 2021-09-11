@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiển thị bảng trong website</title>
+</head>
+<body>
+    <h1>hiển thị dạng bảng trong website</h1>
+    <table border="1">
+        
+        <caption>bảng danh sách sinh viên năm học mới</caption>
+        <tr>
+            <!-- đang thực hiện nhóm cột 1 vói cột hai thuộc hàng 1 -->
+            <td colspan="2">stt</td> 
+            
+            <td> năm sinh</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>nguyễn văn a</td>
+            <td>2002</td>
+        </tr>
+       <tr>
+           <td>2</td>
+           <td>nguyễn thị b</td>
+           <td>1999</td>
+       </tr>
+       <tr>
+           <td>3</td>
+           <td>nguyễn văn c</td>
+           <td>1998</td>
+       </tr>
+    </table>
+    <table border="1">
+        <caption>bảng danh sách sản phẩm</caption>
+        <th>
+            <tr>
+                <td >stt</td>
+                <td>danh sách sản phẩm</td>
+                <td>giá</td>
+            </tr>
+        </th>
+        <tbody>
+            <tr>
+                <td rowspan="2" >1</td> <!-- đang thực hiện nhóm hàng hàng 1 với hàng 2 -->
+                <td>samsung</td>
+                <td>5.000.000</td>
+            </tr>
+            <tr>
+                
+                <td>samsung</td>
+                <td>4.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>2</td>
+                <td>samsung</td>
+                <td>4.000.000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

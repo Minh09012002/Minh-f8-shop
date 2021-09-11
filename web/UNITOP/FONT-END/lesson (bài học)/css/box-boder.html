@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boder</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            width: 300px;
+            min-height: 100px;
+            margin-bottom: 20px;
+            /* cách rút gọn thứ tự tác động: width style color */
+            /* border: 1px solid #f00; */
+            /* tác động từng cạnh một 
+        border-top: 2px solid green;
+        border-right: 2px dashed red;
+        border-bottom: 2px dotted yellow;
+        border-left: 2px solid chocolate; */
+            border: 1px solid grey;
+        }
+        
+        .box:hover {
+            border: 2px dotted red;
+        }
+        /* ôn lại phần tử hover chuột  */
+        
+        .box-1:hover {
+            border: 2px solid green;
+        }
+        /* ôn lại phần tử anh chị em liền kề */
+        
+        h1+.box {
+            background-color: red;
+        }
+    </style>
+    <h1>border</h1>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus, vel ut debitis quisquam obcaecati. At illo laboriosam unde quia fugiat hic, odio, illum maiores natus sit eveniet omnis cum?
+        </p>
+    </div>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus, vel ut debitis quisquam obcaecati. At illo laboriosam unde quia fugiat hic, odio, illum maiores natus sit eveniet omnis cum?
+        </p>
+    </div>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus, vel ut debitis quisquam obcaecati. At illo laboriosam unde quia fugiat hic, odio, illum maiores natus sit eveniet omnis cum?
+        </p>
+    </div>
+    <div class="box box-1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus, vel ut debitis quisquam obcaecati. At illo laboriosam unde quia fugiat hic, odio, illum maiores natus sit eveniet omnis cum?
+        </p>
+    </div>
+</body>
+
+</html>

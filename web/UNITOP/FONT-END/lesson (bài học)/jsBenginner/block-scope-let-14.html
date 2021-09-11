@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khai báo biến với let</title>
+</head>
+<body>
+    <h1>khai báo biến block-scope với câu lệnh let</h1>
+  <!--  <script>
+        {
+            var x= 20;
+        }
+        console.log(x); // nó vẫn được in ra vì khi khai báo var thì nó vẫn thông nhau
+
+    </script>
+    <script>
+        {
+            let x = 10;
+            console.log(x); // đúng vì nằm trong phạm vi khai báo let
+        }
+        //console.log(x); // sai vì khi khai báo let nó chỉ ảnh hướng trong phạm vi khối
+    </script>
+    <script>
+        var x = 30;
+        for(let i = 1; i<= 4; i++)
+        {
+            console.log(i);
+        }
+        console.log(i); // in ra nếu trong vòng lặp for khai báo var
+
+    </script>
+-->
+    <script>
+        // var x = 10;
+        // var x = 20;
+        // console.log(x)
+        // nếu sử dụng var thì hoàn toàn có thể khai báo lại biến
+
+        // var x = 30;
+        // let x = 20;
+        // console.log(x)
+        // hoặc
+        // let x = 10;
+        // let x = 20;
+        // nếu sử dụng let thì không thể khai báo lại biến trên một cấp nhưng có thể khai báo lại biến trên hai cấp
+
+        let z = 100;
+            {
+                let z = 100;
+                console.log(z); // in ra 100 của thằng trong
+            }
+            console.log(z); // in ra 100 của thằng ngoài
+
+        // nhưng nếu như không khai báo lại biến như này thì sẽ in ra
+
+        let x = 100;
+        let y = 50;
+        console.log(y);
+    </script>
+
+</body>
+</html>

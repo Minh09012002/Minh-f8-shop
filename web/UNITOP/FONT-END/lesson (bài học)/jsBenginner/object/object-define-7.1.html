@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định nghĩa object trong js</title>
+</head>
+<body>
+    <h1>Định nghĩa object trong js</h1>
+    <script>
+        // có hai cách định nghĩa 
+
+        // cách 1 : tạo ra một object rồi gán giá trị cho nó luôn
+        // let person={
+        //     firstname :'Nguyễn Văn',
+        //     lastname : 'Minh',
+        //     gender : 'male',
+        //     age :'19'
+        // }
+        // console.log(person);
+
+        // cách 2: định nghĩa object thông qua new object
+        let person = new Object();
+        person.firstname='phan văn';
+        person.lastname = 'cương';
+        person.age =32;
+        person.gender='male';
+        
+        console.log(person);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cách xuất dữ liệu trong js</title>
+</head>
+<body>
+    <style>
+        #result{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <h1>cách cách xuất dữ liệu trong js</h1>
+    <div id="result"></div>
+    <script>
+        var a,b,total;
+        a = 10;
+        b = 20;
+        total = a + b;
+        alert(total); // xuất dữ liệu bằng hộp thoại
+        document.write(total); // xuất dữ liệu lên trình duyệt
+        document.getElementById('result').innerHTML = total; // đổ dữ liệu lên một thẻ nào đó
+        console.log(total) // xuất giá trị lên console của trinh duyệt
+
+    </script>
+</body>
+</html>

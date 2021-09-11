@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /* các selector cơ bản và thường được sử dụng */
+
+        /* .class : .intro = chọn tất cả các thẻ có .intro*/
+        .paragrap{
+            color: red;
+        }
+        
+        /* .class1.class2 : .name1.name2 = chọn tất cả các .name1 và .name2 được đặt trong thuộc tính đó */
+        .paragrap.p1{
+            color: green;
+        }
+
+        /* .class1 .class2 : .name1 .name2 = chọn các .name2 là con của một phần tử có .name1  */
+
+      .container .p2{
+          color: yellow;
+      }
+      ul~p{
+          color: blue;
+      }
+      
+    </style>
+</head>
+<body>
+    <!-- <div class="main">
+        <div class="container">
+            <p class="paragrap p1">đây là đoạn văn</p>
+            <p class="paragrap p2">đây là đoạn văn</p>
+            <p class="paragrap p3">đây là đoạn văn</p>
+            <p class="paragrap p4">đây là đoạn văn</p>
+            <p class="p2">đây là thẻ p</p>
+            <p class="p5">đây là thẻ p5</p>
+        </div>
+    </div> -->
+    <ul id="Listfriends">
+        <li>Goofy</li>
+        <li>Mickey</li>
+        <li>Daisy</li>
+        <li>Pluto</li>
+        </ul>
+        <p class="myquote">All my friends are great!<br>
+        But I really like Daisy!!</p>
+        
+        <p lang="it" title="Hello beautiful">Ciao bella</p>
+        
+        <h3>We are all animals!</h3>
+        <p><b>My latest discoveries have led me to believe that we are all animals:</b></p>
+</body>
+</html>

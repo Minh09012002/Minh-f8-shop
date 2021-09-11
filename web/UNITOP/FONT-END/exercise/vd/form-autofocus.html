@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofocus</title>
+</head>
+
+<body>
+    <style>
+        .list-product {
+            display: block;
+            text-decoration: none;
+        }
+        
+        .price {
+            display: block;
+            text-align: center;
+        }
+        
+        .product-name {
+            display: block;
+            text-align: center;
+        }
+        
+        .buy-now {
+            display: block;
+            text-align: center;
+        }
+        
+        img {
+            margin-left: 25%;
+        }
+        
+        .bth-submit {
+            background: blue;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        .header {
+            width: 960px;
+            padding: 10px;
+            color: white;
+            background: blue;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .wp-content {
+            width: 960px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .sidebar {
+            width: 600px;
+            min-height: 400px;
+            background: #f5f5f5;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+        .content {
+            width: 360px;
+            min-height: 400px;
+            background: #e1e1e1;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        .footer {
+            box-sizing: border-box;
+            width: 960px;
+            min-height: 200px;
+            padding: 10px;
+            background: rgb(86, 86, 88);
+            color: rgb(31, 24, 24);
+            text-align: center;
+            /* display: flex;
+            flex-direction: row; */
+        }
+        
+        .introduce {
+            float: left;
+            margin-left: 100px;
+            padding: 20px;
+            background: burlywood;
+        }
+    </style>
+    <h1>Form autofocus</h1>
+    <!-- <label for="username">nhập tên</label>
+    <input type="text" name="username" id="username" placeholder="nhập tên"> <br>
+    <label for="password">mật khẩu</label>
+    <input type="password" name="password" placeholder=" mật khẩu " id="password"> -->
+    <table border="1">
+        <tr>
+            <td>stt</td>
+            <td>họ tên</td>
+            <td>ngày sinh</td>
+            <td>nơi ở</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>nguyễn văn minh </td>
+            <td>9/1/2002</td>
+            <td>nghệ an</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>nguyễn văn minh </td>
+            <td>9/1/2002</td>
+            <td>nghệ an</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>nguyễn văn minh </td>
+            <td>9/1/2002</td>
+            <td>nghệ an</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>nguyễn văn minh </td>
+            <td>9/1/2002</td>
+            <td>nghệ an</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <ul type="square">
+        <li>
+            nguyễn văn minh
+        </li>
+        <li>nguyễn thị soa</li>
+    </ul>
+    <br>
+    <ol type="a">
+        <li>nguyễn văn minh </li>
+        <li>nguyễn thị soa</li>
+    </ol>
+    <br><br>
+    <ul class="list-product">
+        <li>
+            <a href="">
+                <img src="../html-ex1/img/1.jpg" alt="">
+            </a>
+            <span class="price">499.000đ</span>
+            <a href="" class="product-name">đây là sản phẩm đẹp nhất</a>
+            <a href="" class="buy-now">Mua ngay</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <input type="email" name="email" value="emali" placeholder="email">
+    <input type="number" name="amout" value="number" placeholder="số lượng" min="0" max="100">
+    <br>
+    <br>
+    <h1> thẻ nhập ngày tháng</h1>
+    <form action="">
+        <label for="birth">nhập ngày </label> <br>
+        <input type="date" name="birth" value="birth" id="birth">
+
+    </form>
+    <h1>nhập dạng thanh xổ : chọn một trong nhiều lựa chọn</h1>
+    <form action="">
+        <label for="city">thành phố</label>
+        <select name="city" id="city">
+            <option value="0">chọn thành phố</option>
+            <option value="1">Thành phố HcM</option>
+            <option value="2">Nghệ An</option>
+            <option value="3">Hà Tĩnh</option>
+        </select>
+    </form>
+
+    <h1>radio box chọn 1 trong vài lựa chọn</h1>
+    <form action="">
+        <label for="male">nam</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female">Nữ</label>
+        <input type="radio" name="gender" value="female" id="female">
+    </form>
+
+    <h1>check box chọn 1 hoặc nhiều lựa chọn</h1>
+    <form action="">
+        <label for="intersts">Sở thích :</label>
+        <br>
+        <label for="book">đọc sách</label>
+        <input type="checkbox" name="book" id="book" value="book">
+        <label for="game">chơi game</label>
+        <input type="checkbox" name="game" id="game">
+        <label for="shopping">Mua sắm</label>
+        <input type="checkbox" name="shopping" id="shopping">
+    </form>
+    <br>
+    <h1>thanh nhập liệu đoạn văn bản</h1>
+    <form action="">
+        <label for="post">Nhận xét sản phẩm</label>
+        <textarea name="post-content" id="post" cols="30" rows="10"></textarea>
+    </form>
+    <h1>nút gửi dữ liệu lên server</h1>
+    <form action="">
+        <input class="bth-submit" type="submit" name="submit" value="đăng nhập ">
+    </form>
+    <br>
+    <br>
+    <h1>tạo layout thông qua thẻ div</h1>
+    <div class="wrapper">
+        <div class="header">
+            Header
+        </div>
+        <div class="wp-content">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+        <div class="footer">
+            <div class="introduce">
+                <p>bản quyền thuộc về đài truyền hình việt nam</p>
+                <p>chúng tôi luôn đồng hành cùng bạn</p>
+                <p>đường lê lợi thành phố vinh</p>
+            </div>
+            <div class="introduce">
+                <p>bản quyền thuộc về đài truyền hình việt nam</p>
+                <p>chúng tôi luôn đồng hành cùng bạn</p>
+                <p>đường lê lợi thành phố vinh</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

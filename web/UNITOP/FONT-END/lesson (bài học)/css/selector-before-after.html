@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before-after selector</title>
+</head>
+<body>
+    <style>
+        h2:before{
+            content:"trước";
+            color: darkgoldenrod;
+        }
+        h2:after{
+            content:"sau";
+            color: darkgreen;
+        }
+            .listpost li {
+                list-style-type:none;
+                margin-bottom: 20px;
+                height: 100px;
+                background-color: darkorange;
+            
+            }
+        
+       
+        
+        .listpost .new:before{
+            content:url(https://soshareit.com/wp-content/plugins/symbols/icons/load.svg)
+            /* content là để bắt buộc phải có khi sử dụng before với after để hiển thị một dạng trước hoặc sau một phần tử cụ thể*/ 
+        }
+        .new:after{
+            content:url(https://soshareit.com/wp-content/plugins/symbols/icons/load.svg)
+        }
+    </style>
+    <h2>Before-After</h2>
+    <ul class="listpost">
+        <li class="new"><a href="" >mục lục 1</a></li>
+        <li class="new"><a href="">mục lục 2</a></li>
+        <li class="new"><a href="">mục lục 3</a></li>
+    </ul>
+   
+</body>
+</html>

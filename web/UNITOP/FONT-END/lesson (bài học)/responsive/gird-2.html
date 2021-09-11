@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="gird-2.css">
+    <title>gird-2</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .coures-item{
+        background: tomato;
+        height: 260px;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        padding-top: 50%;
+    }
+    .category{
+        background: green;
+        height: 260px;
+    }
+    ul{
+        margin: 0;
+    }
+    @media screen and (min-width:1024px){
+        .coures-item h1{
+            margin: 0;
+        }
+    }
+</style>
+<body>
+    <div class="gird wide container">
+        <!-- <div class="row">
+          <div class="col l-3 m-4 c-6">
+              <div class="coures-item">
+                  <h1>coures</h1>
+              </div>
+          </div>
+          <div class="col l-3 m-4 c-6">
+            <div class="coures-item">
+                <h1>coures</h1>
+            </div>
+        </div>
+        <div class="col l-3 m-4 c-6">
+            <div class="coures-item">
+                <h1>coures</h1>
+            </div>
+        </div>
+        <div class="col l-3 m-4 c-6">
+            <div class="coures-item">
+                <h1>coures</h1>
+            </div>
+        </div>
+        </div> -->
+        <div class="row">
+            <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>php</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12 c-12">
+                        <div class="coures-item">
+                            <h1>coures</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="coures-item">
+                            <h1>coures</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="coures-item">
+                            <h1>coures</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

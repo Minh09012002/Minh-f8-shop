@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background repeat</title>
+</head>
+<body>
+    <style>
+        #wrapper{
+            width: 960px;
+            margin: 0px auto;
+        }
+        .box{
+            background:wheat;
+            width: 600px;
+            min-height: 400px;
+            background:url(image/icon-cài\ đặt.png);
+            background-size:80px;
+            background-repeat: no-repeat;
+            /* repeat-x là lặp theo chiều ngang */
+            /* background-repeat: repeat-x; */
+            /* repeat-y là lặp theo chiều dọc */
+            /* background-repeat:repeat-y; */
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Background repeat</h1>
+        <div class="box">
+             
+        </div>
+    </div>
+</body>
+</html>

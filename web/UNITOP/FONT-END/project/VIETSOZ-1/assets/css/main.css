@@ -1,0 +1,309 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.container{
+    width:1170px;
+    margin: 0px auto;
+    display: flex;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* ====================HEADER==================== */
+#header{
+    border-bottom: 1px solid #d8d8d8;
+}
+#header .container{
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.main-menu nav ul.menu {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.search .fas{
+    color: #a3a3a3;
+}
+.main-menu nav ul.menu li{
+    padding: 5px 15px;
+}
+.main-menu nav ul.menu li:hover{
+    background: #01a050;
+}
+.main-menu nav ul.menu li a{
+    color: #000000;
+    text-decoration: none;
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 180px;
+    height: 35px;
+    font-style: italic;
+    border: 1px solid #e1e1e1;
+    padding-left:10px;
+}
+.search a{
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    color: #a3a3a3;
+}
+/* ---------------------END HEADER-------------------------- */
+/* =======================  WP CONTENT======================== */
+#wp-content .container{
+    margin-top: 30px;
+}
+/* ================= CONTENT================= */
+#wp-content #content{
+    min-height: 500px;
+    padding-right: 34px;
+    border-right: 1px solid #f5f5f5
+}
+#content .box-body{
+    display: flex;
+}
+/* .box-post-news .box-body{
+    width: 795px;
+} */
+.box-advertisement{
+    width: 473px;
+    margin-right: 15px;
+}
+.box-advertisement .post-thumb{
+    display: block;
+    margin-bottom: 27px;
+}
+.box-advertisement .post-title{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration:none;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+/* a.post-title:hover{
+    color: #01a050;
+    text-decoration: none;
+} */
+.box-advertisement a{
+    text-decoration: none;
+}
+.box-advertisement .post-excerpt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #3f3f3f;
+    margin-top: 20px;
+}
+.box-news-item{
+    margin-left: 15px;
+}
+.box-news-item ul.list-post{
+    padding: 0px;
+}
+.box-news-item ul.list-post li{
+    display: flex;
+    padding-bottom: 20px;
+}
+.box-news-item ul.list-post .post-thumb{
+    padding-right: 22px;
+}
+.box-news-item ul.list-post a{
+    text-decoration: none;
+}
+.box-news-item ul.list-post a .post-title{
+    font-size: 14px;
+    color: #000000;
+}
+ul.list-post li .post-title:hover{
+    color: #01a050;
+}
+/* -----------XONG PHẦN ĐẦU CỦA CONTENT-------------------------*/
+/* ======================BOX-NEWS================= */
+.box-head{
+    border-bottom: 1px solid #01a050;
+}
+h3{
+    display: inline-block;
+    background: #01a050;
+    margin: 0px;
+    padding: 8px 24px;
+    font-size: 18px;
+    color: #fefefe;
+    font-weight: bold;
+
+}
+.post-title{
+    font-size: 14px;
+}
+.box-news-items-hightlights{
+    width: 473px;
+    margin-right: 15px;
+}
+.post{
+    display: flex;
+    margin-top: 20px;
+}
+.post .post-thumb{
+    padding-right: 20px;
+}
+.post-title{
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+}
+a.post-title:hover{
+    color: #01a050;
+    text-decoration: none;
+}
+.box-news-items-hightlights ul.list-post{
+    padding: 0;
+    margin: 0;
+}
+.box-news-items-hightlights ul.list-post li{
+    display: flex;
+}
+.box-news-items-hightlights ul.list-post li .post-thumb{
+    padding-right: 20px;
+}
+.post-excerpt{
+    margin: 0;
+    font-size: 14px;
+    color: #3f3f3f;
+}
+.box-news-items-normal{
+    width: 292px;
+    margin-left: 15px;
+}
+.box-news-items-normal ul.list-post{
+    padding: 0px;
+    margin: 0px;
+}
+.box-news-items-normal ul.list-post li{
+    display: flex;
+    margin-bottom: 20px;
+}
+ul.list-post li .post-thumb{
+    padding-right: 30px;
+    display: block;
+}
+ul.list-post li a{
+    text-decoration: none;
+}
+ul.list-post li .post-title{
+    font-size: 14px;
+    color: #000000;
+    margin:0px;
+}
+/* -------------------END CONTENT-------------------- */
+/* ===========================SIDEBAR=========================== */
+#wp-content #sidebar{
+    padding-left: 32px;
+}
+#sidebar .box-top-topic{
+    margin-bottom: 40px;
+}
+#sidebar .box-head{
+    margin-bottom: 15px;
+}
+#sidebar .box-head h3{
+    background: none;
+    padding-left: 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 21px;
+}
+#sidebar ul.list-post{
+    padding: 0px;
+    padding-right: 15px;
+    margin: 0px;
+}
+#sidebar ul.list-post li{
+    display: flex;
+    margin-bottom: 20px;
+}
+#sidebar ul.list-post li:last-child{
+    margin-bottom: 0;
+}
+#sidebar ul.list-post li a.post-thumb{
+    display: block;
+}
+.box-bottom-toppic{
+    margin-top: 50px;
+}
+
+/* ==================END WP-CONTENT====================== */
+/* =======================FOOTER========================= */
+#footer{
+    background: #01a050;
+}
+#footer .box-head{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#footer .box-head h3{
+    color: #ffffff;
+    font-size: 21px;
+    padding-left: 0;
+    background: none;
+}
+#footer .box-about-us{
+    width: 293px;
+    padding-right: 15px;
+}
+#footer p,i{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.box a{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.box a:hover{
+    color: rgb(192, 12, 12);
+}
+/* .box-social i:hover{
+    color: rgb(192, 12, 12);
+} */
+.box-social{
+    padding-right: 15px;
+}
+.box-category{
+    width: 195px;
+    padding: 0px 15px 0px 15px;
+}
+.box-featured-news{
+    width: 395px;
+    padding: 0px 15px 0px 15px;
+}
+.box-fanpage{
+    width: 292px;
+    padding-left: 15px;
+}
+#footer .box{
+    display: flex;
+    margin-bottom: 18px;
+}
+/* ===================END FOOTER============================ */
+/* ======================  COPPYRIGHT========================= */
+#wp-coppyright>.container{
+    display:block;
+}
+.coppyright{
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #454545;
+}

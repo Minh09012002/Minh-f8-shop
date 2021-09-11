@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Float</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 800px;
+            margin: 0px auto;
+        }
+        
+        .box-1 {
+            width: 300px;
+            height: 200px;
+            background-color: burlywood;
+            /* dùng để tạo ra một khoảng trống đưa thằng ở sau lên ngang hàng */
+            float: left;
+        }
+        
+        .box-2 {
+            width: 400px;
+            height: 200px;
+            background-color: cyan;
+            /* chú ý độ rộng của thằng box -2 phải bé hơn hoặc bằng thằng box-1 để lại */
+            /* ví dụ trong wrapper có chiều rông là 800px thằng box-1 chiếm 300px thì
+             thằng box-2 chỉ có thể chiếm tối đa là 500px thì mới có thể nhảy lên bên thằng box-1 được  */
+            float: left;
+        }
+        
+        .contain {
+            width: 800px;
+            margin: 0px auto;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Float</h1>
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+    </div>
+
+
+</body>
+
+</html>

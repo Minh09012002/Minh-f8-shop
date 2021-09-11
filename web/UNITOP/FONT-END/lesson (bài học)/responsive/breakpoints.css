@@ -1,0 +1,29 @@
+body{
+    background: tomato;
+}
+h2{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+    display: none;
+}
+/* mobile : width < 740px */
+@media only screen  and (max-width:739px){
+    .mobile{
+        display:block;
+    }
+}
+/* tablet width:>= 740px and width < 1023px */
+@media only screen and (min-width:740px) and (max-width:1023px) {
+    .tablet{
+        display: block;
+    }
+}
+/* pc width : 1024px */
+@media only screen and (min-width:1024px){
+    .pc{
+        display: block;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector-con cháu hậu duệ</title>
+</head>
+<body>
+    <!-- <style>
+        <!-- chọn tất cả các phần tử thuộc ul con  
+        #wrapper ul li ul li a{
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+    <div id="wrapper">
+        <ul>
+            <li><a href="">trang chủ</a></li>
+            <li><a href="">liên hệ</a></li>
+            <li><a href="">giới thiệu</a>
+                <ul>
+                    <li><a href="">trà xanh</a></li>
+                    <li><a href="">táo đỏ</a></li>
+                    <li><a href="">mận quân</a></li>
+                </ul>
+            </li>
+            <li><a href="">sản phẩm</a></li>
+        </ul>
+    </div> -->
+    <style>
+        /* chọn tất cả các phần tử thuộc sub-menu */
+         #wrapper li #sub-menu a{
+            color: blue;
+        }
+    </style>
+    <div >
+        <ul id="wrapper">
+            <li><a href="">trang chủ</a></li>
+            <li><a href="">liên hệ</a></li>
+            <li><a href="">giới thiệu</a>
+                <ul id="sub-menu">
+                    <li><a href="">trà xanh</a></li>
+                    <li><a href="">táo đỏ</a></li>
+                    <li><a href="">mận quân</a></li>
+                </ul>
+            </li>
+            <li><a href="">sản phẩm</a></li>
+        </ul>
+    </div>
+</body>
+</html>

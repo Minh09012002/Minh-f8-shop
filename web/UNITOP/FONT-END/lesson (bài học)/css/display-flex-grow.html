@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Grow</title>
+</head>
+
+<body>
+    <style>
+        #container {
+            width: 960px;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .flex-order {
+            background: tomato;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            flex-basis: 200px;
+            /* flex-grow: 1; */
+        }
+        /* mặc định các phần tử có order là 0 khi đánh số mới các phần tử có order nhỏ hơn sắp xếp trước  */
+        
+        .item-1 {
+            order: 1;
+            flex-grow: 0.3;
+        }
+        
+        .item-2 {
+            order: 0;
+            flex-grow: 0.7;
+        }
+    </style>
+    <h1>Display flex grow</h1>
+    <div id="container">
+        <div class="flex-order item-1">1</div>
+        <div class="flex-order item-2">2</div>
+
+    </div>
+</body>
+
+</html>

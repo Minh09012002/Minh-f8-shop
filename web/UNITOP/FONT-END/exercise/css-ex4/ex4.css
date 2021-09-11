@@ -1,0 +1,27 @@
+#wrapper {
+  width: 800px;
+  margin-left: 300px;
+}
+
+h1.text-capitalize {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+a.text-bold,p.text-bold {
+  font-weight: bold;
+}
+p.text-justify {
+    text-align: justify;
+}
+a.text-decoration {
+  text-decoration: line-through;
+}
+h2.text-uppercase{
+  text-transform: uppercase;
+}
+p.text-color-right {
+  font-size: 20px;
+  text-align: right;
+  color: chocolate;
+}

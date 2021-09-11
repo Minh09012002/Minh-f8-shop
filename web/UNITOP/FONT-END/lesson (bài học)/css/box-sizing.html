@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box sizing</title>
+</head>
+
+<body>
+    <style>
+        .box-1 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            /* box-sizing là thuộc tính xác định kích thước của khối
+             (thuộc tính border-box là giữ nguyên kích thước của khối ban đầu) */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        
+        .box-2 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px dotted #f00;
+        }
+        /* ôn lại kiến thức hover */
+        
+        .box-2:hover {
+            box-sizing: border-box;
+            border: 2px solid gold;
+        }
+    </style>
+    <h1>Box sizing</h1>
+    <div class="box-1">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos at pariatur architecto asperiores? Officia ipsa iste dolore fuga explicabo molestiae.
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam saepe necessitatibus explicabo amet tempore ducimus ad voluptates, inventore eveniet quam.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in </title>
+</head>
+<body>
+    <h1>vòng lặp for in trong js</h1>
+    <script>
+        let person = {
+            fullname : 'Nguyễn văn minh',
+            age : 19,
+            gender :'male'
+        };
+
+        for(let key in person){
+            document.write(key + ":" + person[key] + "<br>");
+        }
+
+        document.write("<hr>");
+
+        let mycolor = ['red', 'green' , 'blue'];
+
+        for(let key in mycolor){
+            document.write(key + ":" + mycolor[key] + "<br>");
+           
+        }
+
+        let language = 'javascript';
+        for(let key in language){
+            console.log(typeof key);
+        }
+    </script>
+</body>
+</html>

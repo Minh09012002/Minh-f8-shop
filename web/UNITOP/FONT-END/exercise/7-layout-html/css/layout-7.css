@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    flex: 100%;
+    min-height: 60px;
+    background: #0073aa;
+}
+
+.header-child {
+    width: 960px;
+    min-height: 60px;
+    margin: 0px auto;
+    background: #0073aa;
+}
+
+.header-child h2 {
+    color: #f8f8f8;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.wp-content {
+    flex: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 60%;
+    min-height: 600px;
+    background-color: #f4f4f4;
+}
+
+.content h2 {
+    color: #232323;
+    font-size: 20px;
+}
+
+.sidebar-left {
+    width: 20%;
+    min-height: 600px;
+    background: #e1e1e1;
+}
+
+.sidebar-right {
+    width: 20%;
+    min-height: 600px;
+    background: #e1e1e1;
+}
+
+.sidebar-left h2 {
+    color: #232323;
+    font-size: 20px;
+}
+
+.sidebar-right h2 {
+    color: #232323;
+    font-size: 20px;
+}
+
+.item-1 {
+    order: 2;
+}
+
+.item-2 {
+    order: 1;
+}
+
+.item-3 {
+    order: 3;
+}
+
+.footer {
+    flex: 100%;
+    min-height: 40px;
+    background: #232323;
+}
+
+.footer-child {
+    width: 960px;
+    min-height: 40px;
+    margin: 0px auto;
+    background: #232323;
+}
+
+.footer-child h2 {
+    color: #f8f8f8;
+    font-size: 20px;
+    padding: 5px 0px;
+    margin: 0px;
+}

@@ -1,0 +1,333 @@
+    /* 
+Quy tắc quá trình css
+1 từ tổng quan đến chi tiết
+2 từ ngoài vào trong
+3 từ sau ra trước
+4 từ trên xuống dưới
+5 từ trái qua phái */
+    
+    body {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .container {
+        width: 1170px;
+        margin: 0px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        line-height: 1.5;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0px;
+    }
+    /* ====================== HEADER======================== */
+    
+    #header {
+        background: #23282d;
+        padding-top: 28px;
+        padding-bottom: 9px;
+        margin-bottom: 35px;
+    }
+    
+    form#search input {
+        background: #131619;
+        border: none;
+        outline: none;
+        width: 247px;
+        padding: 9px 42px 9px 15px;
+        color: #909090;
+    }
+    
+    form#search {
+        position: relative;
+    }
+    
+    button {
+        background: none;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 9px 12px;
+        border: 0;
+        color: #fff;
+    }
+    
+    #header ul#main-menu li a {
+        display: block;
+        padding: 6px 20px;
+        color: #eeeeee;
+    }
+    
+    #header ul#main-menu li:first-child a {
+        padding-left: 0;
+    }
+    
+    nav {
+        margin-top: 7px;
+        flex: 100%;
+        border-right: 10px solid #ff2d2d;
+    }
+    
+    #header ul#main-menu li:hover a,
+    #header ul#main-menu li.active a {
+        color: #4db2ec;
+        text-decoration: none;
+    }
+    /* ==================FEATURED-POST===================== */
+    
+    #wp-featured-post {
+        margin-bottom: 20px;
+    }
+    
+    .box-header h3 {
+        display: inline-block;
+        background: #23282d;
+        color: #eeeeee;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 3px 15px;
+        margin: 0px;
+    }
+    
+    #box-featured-post .box-body {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dadada;
+    }
+    
+    .box-body {
+        padding-top: 20px;
+    }
+    
+    ul.list-featured-post li {
+        flex: 360px 0 1;
+    }
+    
+    ul.list-featured-post li .post-thumb {
+        display: block;
+        overflow: hidden;
+    }
+    
+    ul.list-featured-post li .post-thumb:hover {
+        transform: scale(1.02, 1.02);
+    }
+    
+    ul.list-featured-post li .post-thumb {
+        transition: all 0.25s;
+    }
+    
+    ul.list-featured-post li .post-title {
+        color: #5f5f5f;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 20px;
+        display: block;
+    }
+    /* =================WRAPPER CONTENT=================== */
+    
+    #content {
+        flex: 765px;
+        padding-right: 15px;
+    }
+    
+    .box-new-post .box-header h3 {
+        background: #4db2ec;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    .box-new-post .box-header {
+        border-bottom: 2px solid #4db2ec;
+    }
+    
+    ul.list-post li {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    
+    ul.list-post li .post-thumb {
+        display: block;
+        flex: 280px;
+        padding-right: 15px;
+    }
+    
+    ul.list-post li .more-info {
+        padding-left: 15px;
+    }
+    
+    ul.list-post li .more-info .post-title {
+        font-size: 21px;
+        color: #111111;
+        display: block;
+        font-weight: 600;
+    }
+    
+    ul.list-post li .more-info .post-title:hover {
+        color: #4db2ec;
+        text-decoration: none;
+    }
+    
+    ul.list-post li .more-info .post-published {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 7px 0px;
+    }
+    
+    .post-author {
+        color: #111111;
+        padding-left: 10px;
+    }
+    
+    .post-date {
+        color: #aaa;
+    }
+    
+    .post-excerpt {
+        font-size: 14px;
+        color: #777777;
+        margin-bottom: 0px;
+    }
+    /* ==========================SIDEBAR======================= */
+    
+    #sidebar {
+        flex: 375px;
+        padding-left: 15px;
+    }
+    
+    a.asd {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .box-top-topic .box-header {
+        border-bottom: 1px solid #ff2d2d;
+    }
+    
+    .box-top-topic .box-header h3 {
+        background: #ff2d2d;
+        color: #fcfcfc;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    .box-body ul.list-topic li a {
+        font-size: 16px;
+        color: #212121;
+        display: block;
+        padding: 6px 0px;
+    }
+    
+    .box-body .list-topic li a:hover {
+        color: #ff2d2d;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    ul.list-topic a {
+        position: relative;
+    }
+    
+    ul.list-topic .num-topic {
+        position: absolute;
+        top: 7px;
+        right: 20px;
+    }
+    /* ======================FOOTER=====================*/
+    
+    #footer {
+        background: #2e2f30;
+        padding-top: 52px;
+        padding-bottom: 75px;
+        color: #f6f6f6;
+    }
+    
+    #footer .box-header h3 {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    #footer .logo-footer .box-header {
+        visibility: hidden;
+    }
+    
+    #footer .logo-footer {
+        width: 280px;
+        padding-right: 15px;
+    }
+    
+    #footer .about-us {
+        width: 680px;
+        padding-right: 180px;
+        padding-left: 15px;
+    }
+    
+    #footer .follow-us {
+        width: 180px;
+        padding-left: 10px;
+    }
+    
+    #footer .box-body ul.list-social li {
+        margin-left: 10px;
+    }
+    
+    #footer .box-body ul.list-social li:first-child {
+        margin-left: 0;
+    }
+    
+    #footer .about-us a {
+        color: #4db2ec;
+        font-size: 14px;
+    }
+    
+    #footer .box-body ul.list-social li a {
+        color: #eeeeee;
+        background: #434648;
+        padding: 5px 12px;
+        display: block;
+    }
+    
+    #footer .box-body ul.list-social li:hover a {
+        color: #4db2ec;
+    }
+    
+    #footer .box-body {
+        padding-top: 40px;
+    }
+    /* =========================COPYRIGHT======================== */
+    
+    #wp-copyright {
+        background: #222527;
+        font-size: 14px;
+    }
+    
+    .copyright {
+        width: 205px;
+        color: #ffffff;
+        padding: 13px 0px;
+        margin-bottom: 0;
+    }
+    
+    #footer-menu li a {
+        color: #f3f3f3;
+        text-transform: capitalize;
+        padding: 13px 13px;
+        display: block;
+    }
+    
+    #footer-menu li:last-child a {
+        padding-right: 0;
+    }
+    
+    #footer-menu li:hover a {
+        color: #4db2ec;
+        text-decoration: none;
+    }

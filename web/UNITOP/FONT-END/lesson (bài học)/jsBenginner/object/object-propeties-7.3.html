@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thêm ,cập nhật,xoá các thuộc tính trong js</title>
+</head>
+<body>
+  <h1>thêm , cập nhật , xoá các thuộc tính trong js</h1>
+  <script>
+      let person={
+          fistname:'phan văn',
+          lastname:'cương',
+          age :33,
+      }
+      // thêm thuộc tính trong js
+      person.gender='male'; // thêm thuộc tính gender vào person
+      console.log(person);
+
+      // cập nhật thuộc tính trong js
+      person.age='35'; // cập nhật tuổi 35 thay cho tuổi 32
+      console.log(person);
+
+      // xoá thuộc tính trong js
+      delete(person.fistname);
+      console.log(person);
+  </script>
+</body>
+</html>

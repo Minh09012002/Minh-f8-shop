@@ -1,0 +1,101 @@
+.container{
+    width: 1170px;
+    margin: 0px auto;
+}
+.nav{
+    background: black;
+    display: flex;
+}
+.list__nav{
+    display: flex;
+}
+.list__nav li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.link__nav{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    text-transform: capitalize;
+}
+.nav__barst{
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 25px 20px;
+    display: none;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    opacity: 0.3;
+    display: none;
+    animation:fadeIn linear 0.3s;
+}
+.nav__mobile{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: white;
+    width: 320px;
+    max-width: 100%;
+    transform: translateX(-320px);
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.3s;
+}
+.list__mobile-menu{
+    margin-top: 40px;
+    list-style: none;
+}
+.nav__link-mobile{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #666;
+}
+.nav__mobile-times{
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 21px;
+    height: 30px;
+    padding: 5px 10px;
+}
+#nav__input{
+    display: none;
+}
+#nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+#nav__input:checked ~ .nav__mobile{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.nav__mobile-times:hover{
+    background: red;
+    color: #666;
+}
+@media only screen and (max-width: 46.25em){
+    .nav__barst{
+        display: block;
+    }
+    .nav__menu{
+        display: none;
+    }
+}
+@keyframes fadeIn {
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

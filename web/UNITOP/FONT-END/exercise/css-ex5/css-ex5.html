@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-ex5</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        body {
+            box-sizing: border-box;
+        }
+        
+        .box-background-green {
+            background: green;
+        }
+        
+        .text-center-white {
+            text-align: center;
+            color: white;
+        }
+        
+        .text-pd-15 {
+            padding: 15px;
+        }
+        
+        #wp-content {
+            width: 960px;
+            min-height: 400px;
+        }
+        
+        #content {
+            width: 600px;
+            min-height: 400px;
+            background: #f3f3f3f3;
+        }
+        
+        .box-float-left {
+            float: left;
+        }
+        /* .box-sizing {
+            box-sizing: border-box;
+        } */
+        
+        #sidebar {
+            width: 360px;
+            min-height: 400px;
+            background: #e1e1e1e1;
+        }
+        
+        #footer {
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+    <div id="wrapper">
+        <div id=" header" class="box-background-green text-center-white text-pd-15">
+            Layout web 2 cột - Float Css
+        </div>
+        <div id="wp-content">
+            <div id="content" class="text-pd-15 box-float-left ">
+                Content
+            </div>
+            <div id="sidebar" class="text-pd-15 box-float-left ">
+                Sidebar
+            </div>
+        </div>
+        <div id="footer" class="box-background-green text-center-white">
+            unitop.vn
+        </div>
+    </div>
+</body>
+
+</html>

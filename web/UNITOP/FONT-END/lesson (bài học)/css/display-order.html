@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display order</title>
+</head>
+
+<body>
+    <style>
+        #container {
+            width: 960px;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .flex-order {
+            width: 100px;
+            background: tomato;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+        }
+        /* mặc định các phần tử có order là 0 khi đánh số mới các phần tử có order nhỏ hơn sắp xếp trước  */
+        
+        .item-1 {
+            order: 1;
+        }
+        
+        .item-4 {
+            order: -1;
+        }
+        
+        .item-3 {
+            order: 2;
+        }
+    </style>
+    <h1>Display Order</h1>
+    <div id="container">
+        <div class="flex-order item-1">1</div>
+        <div class="flex-order item-2">2</div>
+        <div class="flex-order item-3">3</div>
+        <div class="flex-order item-4">4</div>
+    </div>
+</body>
+
+</html>

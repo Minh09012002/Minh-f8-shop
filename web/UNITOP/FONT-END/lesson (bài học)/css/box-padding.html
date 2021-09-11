@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding </title>
+</head>
+<body>
+    <style>
+        .content{
+            width: 400px;
+            height: 200px;
+            margin: 0px auto;
+            background: chocolate;
+            /* dưới đây là cách đầy đủ:
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            padding-right: 20px; */
+            /* ============================ */
+           /*dưới đây là cách rút gọn:
+           padding: 10px 20px 30px 40px; 
+           hoặc
+           khai báo hai cạnh còn hai cạnh còn lại sẽ theo cạch đối diện mình
+           padding:10px 20px*/
+           /* -------------------------------- */
+        }
+            .pt-10{
+                padding-top: 10px;
+            }
+           .pr-20{
+               padding-right: 20px;
+           }
+           .pb-10{
+               padding-bottom: 10px;
+           }
+           .pl-20{
+               padding-left: 20px;
+           }
+    </style>
+    <h1>Padding </h1>
+    <div class="content pt-10 pr-20 pb-10 pl-20">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid illum eius eveniet impedit at voluptate minima saepe unde consectetur, quis exercitationem magnam perspiciatis iure eos harum assumenda eum ipsa ea.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Margin</title>
+</head>
+<style>
+    .box {
+        width: 500px;
+        background-color: burlywood;
+        padding: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        /* đây là thuộc tính dùng để tạo khoảng cách giữa hai khối theo cách rút gọn */
+        /* margin: 20px 15px; */
+    }
+    
+    .bg-red {
+        background-color: red;
+    }
+    /* tạo khoảng cách theo class từng cạnh */
+    
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+    
+    .mt-15 {
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <h1>Box Margin</h1>
+    <div class="box mb-20">a</div>
+    <div class="box bg-red mt-15">b</div>
+</body>
+
+</html>
