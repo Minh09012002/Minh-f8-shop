@@ -1,0 +1,410 @@
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.content{
+    width: 300px;
+    margin-right: 30px;
+}
+
+.content img{
+    width: 100%;
+    border: 3px solid #f5f5f5;
+}
+
+.description_text{
+    font-size: 20px;
+    color : #242424;
+}
+
+.evaluate{
+    display: flex;
+    align-items: center;
+}
+
+.evaluate_star i{
+    cursor: pointer;
+}
+.selling_stone{
+    margin-left: 10px;
+    color: #787878;
+    position: relative;
+}
+.selling_stone::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    height: 40%;
+    width: 2px;
+    background-color: #e5e5e5;
+    transform:translateY(-50%);
+}
+
+.current_price{
+    font-size: 20px;
+    color: #ff424e;
+    margin-right: 5px;
+}
+
+.old_price{
+    font-size: 18px;
+    color: #787878;
+    margin-right: 3px;
+}
+
+.discount{
+    font-size: 18px;
+    color: #ff424e;
+    border: 1px solid #ff424e;
+    background-color: #fafafa;
+}
+
+.size_type{
+    display: flex;
+    margin-top: 50px;
+}
+
+.size_type img{
+    width: 50px;
+    margin-right: 4px;
+}
+
+.size_type img:hover{
+    cursor: pointer;
+    border: 1px solid #787878;
+}
+
+.color-star{
+    color: #fdd836;
+}
+
+.order{
+    margin-top: 30px;
+
+}
+
+.btn{
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    background-color: #ff3945;
+    color: #ffecff;
+    outline: none;
+    border: 1px solid #787878;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.modal{
+    position: relative;
+    width: 50em;
+    height: 31.625em;
+    margin: 0px auto;
+    display: flex;
+    z-index: 1;
+    transform: translateY(-770px );
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal_content{
+    width :25.5em;
+    background-color: #ffff;
+    padding: 40px 45px 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.modal_head{
+    margin-bottom: 20px;
+}
+
+.modal_text{
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.modal_request{
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#modal_request-js{
+    font-size: 16px;
+    color: #242424;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#modal_request-js,
+.modal_request:hover{
+    opacity: 0.9;
+}
+
+
+.create_acount{
+    cursor: pointer;
+    color:#242424;
+    font-weight: 600;
+}
+.create_acount:hover{
+    opacity: 0.9;
+}
+
+.number_call{
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #949393 ;
+    width: 100%;
+}
+.btn_login{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.notice_wrong-pasword{
+    font-size: 12px;
+    color: #ff3945;
+    display: none;
+}
+
+.login_gmail{
+    display: block;
+    text-align: center;
+    color: #0d5cb6;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.social_heading{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    color: #787878;
+    font-size: 20px;
+}
+.social_list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_item:nth-child(2){
+    margin: 0px 13px;
+}
+
+.social_img{
+    width: 60px;
+
+}
+
+.modal_footer{
+    display:block;
+    text-align: center;
+    color: #787878;
+}
+
+.modal_footer-link{
+    color: #787878;
+}
+
+.modal_sidebar{
+    width: 18.75em;
+    background-color: #e0f0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 25px;
+}
+
+.modal_sidebar-img{
+    width: 200px;
+}
+
+.modal_sidebar h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #0b74e5;
+    margin-bottom: 5px;
+}
+
+.modal_sidebar span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b74e5;
+}
+
+.modal_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #000;
+    transform: translateY(-740px);
+    transition: transform 0.3s ease-in-out
+}
+
+.modal_close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal_close-icon{
+    font-size: 25px;
+    color: #787878;
+}
+
+/* mở modal */
+.modal_open{
+    transform: translateY(-278px);
+    opacity: 1;
+}
+.close_modal{
+    transform: translateY(-770px );
+}
+ /* mở overlay */
+ .modal_overlay-open{
+     transform: translateY(0)
+ }
+ /* ẩn overlay */
+.modal_overlay-close{
+    transform: translateY(-770px );
+}
+
+
+ /* modal pasword */
+ .modal_pasword{
+    width :25.5em;
+    background-color: #ffff;
+    padding: 40px 45px 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display :none
+ }
+
+ #modal_return-js{
+     font-size: 30px;
+     color: #787878;
+     cursor: pointer;
+     display : inline-block
+ }
+
+ .modal_pasword-head{
+     margin-bottom: 20px;
+ }
+
+ .modal_pasword-head h4{
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+ }
+
+ .modal_pasword-head span{
+    color: #676767;
+    font-size: 15px;
+ }
+
+ .verification_code{
+     color: #000;
+     font-weight: 600;
+     display: inline;
+     font-size: 15px;
+ }
+
+ .modal_pasword-content{
+     margin-top: 30px;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content:space-evenly;
+     align-items: center;
+ }
+
+ .modal_pasword-content input{
+     width: 20px;
+     border-top: none;
+     border-right: none;
+     border-bottom: 1px solid #949393;
+     border-left: none;
+     text-align: center;
+     font-size: 30px;
+     outline: none;
+ }
+
+ .modal_pasword-footer{
+     margin-top: 30px;
+ }
+ .modal_pasword-footer span{
+     display: block;
+     text-align: center;
+     font-size: 20px;
+     color: #787878;
+ }
+ #notice_wrong-pasword-js{
+    padding-left: 33px;
+    margin-top: 12px;
+ }
+
+ /* modal register */
+
+ .modal_register{
+    width :25.5em;
+    background-color: #ffff;
+    padding: 40px 45px 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: none;
+ }
+
+ .rigister_pasword{
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #949393 ;
+    width: 100%;
+    margin-top: 30px;
+ }
+
+ .modal_footer-register{
+     margin-top: 40px;
+ }

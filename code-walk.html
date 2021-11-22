@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <title>code walk thực hành js</title>
+</head>
+<html>
+    <!-- ý tưởng là dùng js để hiển thị hình ảnh sản phẩm khi click vào hình ảnh đó -->
+    <div class="wrap">
+        <div class="content" id="content_js">
+            <img src="./img/tải xuống.jpg" alt="" id="content_js-img">
+        </div>
+        <div class="sidebar">
+            <div class="description">
+                <p class="description_text">Giày được nhập khẩu từ châu âu có chất lượng cao</p>
+            </div>
+            <div class="evaluate">
+                <div class="evaluate_star">
+                    <i class="fas fa-star"id="evaluate_star-icon-1"></i>
+                    <i class="fas fa-star"id="evaluate_star-icon-2"></i>
+                    <i class="fas fa-star"id="evaluate_star-icon-3"></i>
+                    <i class="fas fa-star"id="evaluate_star-icon-4"></i>
+                    <i class="fas fa-star"id="evaluate_star-icon-5"></i>
+                </div>
+                <div class="selling_stone">
+                    <p>đã bán 116</p>
+                </div>
+            </div>
+            <div class="price">
+                <span class="current_price">200.0000đ</span>
+                <del class="old_price">250.000đ</del>
+                <span class="discount">-45%</span>
+            </div>
+            <div class="size_type">
+            <img src="./img/tải xuống.jpg" alt="" class="size_img-1">
+            <img src="./img/giay-domba-high-point-white-black-h-9111-mau-trang-5d73226cf1019-07092019102220.jpg" alt="" class="size_img-2">
+            <img src="./img/MG_5961.jpg" alt="" class="size_img-3">
+            </div>
+
+            <div class="order">
+                <button class="btn btn_js">Đặt hàng</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_overlay modal_overlay-js"></div>
+    
+    <div class="modal modal_js">
+        <div class="modal_close modal_close-js">
+            <i class="fas fa-times modal_close-icon"></i>
+        </div>
+        <!-- modal content -->
+        <div class="modal_content modal_content-js">
+            <div class="modal_head">
+                <h2 class="modal_text">Xin Chào</h2>
+                 <span id="modal_request-js">Nhấn vào đây để Tạo Tài khoản</span>
+            </div>
+            <input type="text" class="number_call" placeholder="Số điện thoại" id="login_input-js">
+            <span class = "notice_wrong-pasword" id= "notice_wrong-call-js">*Số điện thoại chưa được đăng kí</span>
+            <button class="btn btn_login btn_login-js">Tiếp Tục</button>
+            <a href = 'https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop' class="login_gmail login_gmail-js" target="blank">Đăng nhập bằng gmail</a>
+            <p class="social_heading">Hoặc đăng nhập bằng</p>
+           <ul class="social_list">
+                <li class="social_item social_item-facebook-js">
+                    <a href="https://www.facebook.com/" alt="" class="social_img" target="blank"><img src="./img/logo1.png" alt="" class="social_img"></a>
+                </li>
+                <li class="social_item social_item-google-js" >
+                    <a href="https://contacts.google.com/?hl=vi" target = "blank"><img src="./img/logo2.png" alt="" class="social_img"></a>
+                </li>
+                <li class="social_item social_item-zalo-js">
+                    <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F" target="blank"><img src="./img/logo3.png" alt="" class="social_img"></a>
+                </li>
+           </ul>
+            <div class="modal_footer">
+                <span class="modal_footer-text">Bằng việc tiếp tục, bạn đã chấp nhận <a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung" target="blank" class="modal_footer-link">điều khoản sử dụng</a></span>
+            </div>
+        </div>
+        <!-- modal pasword -->
+        <div class="modal_pasword modal_pasword-js">
+            <div class="modal_pasword-return" id="modal_return-js">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="modal_pasword-head">
+                <h4>Nhập mã mật khẩu</h4>
+                <span>Mật khẩu phải gồm 6 kí tự<!--<p class="verification_code"></p>--></span>
+
+            </div>
+            <div class="modal_pasword-content">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-1">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-2">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-3">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-4">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-5">
+                <input type="text" placeholder = "0" name="" id="modal_pasword-content-js-6">
+            </div>
+            <span class = "notice_wrong-pasword" id= "notice_wrong-pasword-js">*Mã khẩu không đúng</span>
+            <button class="btn btn_login btn_login-pasword-js" target="blank">Xác minh mật khẩu</button>
+            <div class="modal_pasword-footer">
+                <span>Cảm ơn các bạn đã tin tưởng dùng TiKi</span>
+            </div>
+        </div>
+        <!-- modal rigister -->
+        <div class="modal_register modal_register-js">
+            <div class="modal_head">
+                <h2 class="modal_text">Xin Chào</h2>
+                <p class="modal_request"id = "modal_request-rigister-js" >Nhấn vào đây Đăng nhập</p>
+            </div>
+            <input type="text" type = "email" class="number_call" placeholder="Số điện thoại hoặc Email" id="create_input-js">
+            <span class = "notice_wrong-pasword" id= "notice_wrong-call-js">*Số điện thoại chưa được đăng kí</span>
+            <input type="password" name="pasword" placeholder = "Nhập mật khẩu" class = "rigister_pasword" id="register_pasword-js">
+            <input type="password" name="pasword" placeholder = "Nhập lại mật khẩu" class = "rigister_pasword" id="register_pasword-retype-js">
+            
+            <button class="btn btn_login btn_login-js " id="btn_create-js">Tạo tài khoản</button>
+           
+            <div class="modal_footer modal_footer-register">
+                <span class="modal_footer-text">Bằng việc tiếp tục, bạn đã chấp nhận <a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung" target="blank" class="modal_footer-link">điều khoản sử dụng</a></span>
+            </div>
+
+        </div>
+        <div class="modal_sidebar">
+            <img src="./img/logo4.png" alt="" class="modal_sidebar-img">
+            <div class="modal_sidebar-content">
+                <h4>Mua sắm tại Tiki</h4>
+                <span>Siêu ưu đãi mỗi ngày</span>
+            </div>
+        </div>
+    </div>
+    <script src="./main2.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
